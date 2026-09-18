@@ -1,0 +1,79 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Wedding illustration</title>
+  <desc id="desc">Warm romantic illustration for a wedding invitation</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#120d0d"/>
+      <stop offset="50%" stop-color="#2a1718"/>
+      <stop offset="100%" stop-color="#120d0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f5e7b5"/>
+      <stop offset="50%" stop-color="#d4b96d"/>
+      <stop offset="100%" stop-color="#9c7d40"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffbfd6"/>
+      <stop offset="50%" stop-color="#ff7bb8"/>
+      <stop offset="100%" stop-color="#bd316b"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g opacity="0.8">
+    <circle cx="210" cy="150" r="120" fill="#2f1f29"/>
+    <circle cx="970" cy="180" r="100" fill="#251a20"/>
+    <circle cx="600" cy="110" r="150" fill="#211618"/>
+  </g>
+
+  <g stroke="url(#gold)" stroke-width="5" fill="none" opacity="0.8">
+    <path d="M240 760C300 610 365 540 415 505"/>
+    <path d="M960 760C910 610 845 540 785 505"/>
+  </g>
+
+  <g transform="translate(315 170)">
+    <g transform="translate(80 0)">
+      <circle cx="165" cy="180" r="62" fill="#f4d2c1"/>
+      <path d="M112 130C112 75 154 52 187 52C220 52 260 76 260 128C260 175 224 220 187 252C150 220 112 175 112 130Z" fill="#f9c7d7" opacity="0.9"/>
+      <path d="M140 128C140 102 161 83 189 83C218 83 236 103 236 129C236 155 218 177 189 202C160 177 140 155 140 128Z" fill="#ffebf0"/>
+      <path d="M120 255C131 224 158 204 189 204C220 204 248 224 261 255L288 360H94L120 255Z" fill="#dcb577"/>
+      <path d="M129 338H249L290 430C297 444 290 460 276 460H74C60 460 53 444 60 430L129 338Z" fill="#f9e8c7"/>
+      <path d="M148 246H228C235 246 239 255 233 260L204 282H173L146 260C140 255 142 246 148 246Z" fill="#d5b26d" opacity="0.75"/>
+      <path d="M128 168C144 118 176 109 188 109C200 109 214 116 230 168" fill="none" stroke="#604b2d" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="161" cy="165" r="5" fill="#533d2d"/>
+      <circle cx="216" cy="165" r="5" fill="#533d2d"/>
+      <path d="M172 193C181 200 194 200 203 193" fill="none" stroke="#533d2d" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(0 0)">
+      <circle cx="295" cy="195" r="70" fill="#f2d1b2"/>
+      <path d="M232 140C232 88 268 56 303 56C338 56 372 88 372 140C372 188 339 235 303 270C267 235 232 188 232 140Z" fill="url(#rose)" opacity="0.9"/>
+      <path d="M247 110C247 95 258 82 273 82C288 82 300 95 300 110C300 126 287 136 273 152C260 136 247 126 247 110Z" fill="#fff0f6"/>
+      <path d="M248 280C260 247 288 227 317 227C346 227 374 247 387 280L422 370H214L248 280Z" fill="#c89d59"/>
+      <path d="M252 358H378L414 450C420 466 412 484 398 484H232C218 484 210 466 216 450L252 358Z" fill="#f8e9c6"/>
+      <path d="M274 246H358C365 246 370 253 365 260L331 287H299L270 260C265 253 270 246 274 246Z" fill="#d5b26d" opacity="0.75"/>
+      <path d="M250 180C266 135 300 118 317 118C335 118 355 136 370 180" fill="none" stroke="#604b2d" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="286" cy="171" r="5" fill="#533d2d"/>
+      <circle cx="349" cy="171" r="5" fill="#533d2d"/>
+      <path d="M293 205C303 214 318 214 329 205" fill="none" stroke="#533d2d" stroke-width="5" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(345 70)">
+      <g fill="none" stroke="url(#gold)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M80 200C55 145 52 110 80 80C104 53 150 52 175 84C195 112 196 147 175 194"/>
+        <path d="M138 190C165 148 204 122 244 118"/>
+        <path d="M146 249C180 217 220 205 263 210"/>
+      </g>
+    </g>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="145" cy="690" r="4" fill="#f7d774"/>
+    <circle cx="250" cy="720" r="3" fill="#f7d774"/>
+    <circle cx="340" cy="785" r="2.5" fill="#ffb8d9"/>
+    <circle cx="855" cy="735" r="4" fill="#f7d774"/>
+    <circle cx="980" cy="770" r="3" fill="#ffb8d9"/>
+    <circle cx="1030" cy="690" r="2.5" fill="#f7d774"/>
+    <circle cx="600" cy="760" r="4" fill="#f7d774"/>
+  </g>
+</svg>
