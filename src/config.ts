@@ -1,0 +1,143 @@
+export const getAssetUrl = (path: string): string => {
+  const base = import.meta.env.BASE_URL || '/';
+  const cleanBase = base.endsWith('/') ? base : `${base}/`;
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  return `${cleanBase}${cleanPath}`;
+};
+
+export const CLOCK_CONFIG = {
+  targetDate: new Date('2026-10-25T00:00:00+05:30'),
+  title: 'Save Our Auspicious Date',
+  subtitle: 'Sri Krishna & Swetha',
+  dateDisplay: 'Sunday, 25 October 2026 • Konnakulam, Manamadurai',
+  muhurtham: 'Subha Muhurtham: 10:30 AM – 11:30 AM',
+  quote: 'Looking forward to celebrating our special day with you!',
+  labels: {
+    day: 'DAY',
+    date: 'DATE',
+    month: 'MONTH',
+    year: 'YEAR',
+  },
+  revealValues: {
+    day: 'SUN',
+    date: '25',
+    month: 'OCT',
+    year: '2026',
+  },
+  initialValues: {
+    day: '',
+    date: '',
+    month: '',
+    year: '',
+  },
+  couple: {
+    groom: 'Sri Krishna',
+    bride: 'Swetha',
+  },
+  venue: {
+    name: 'Meeting Hall Konnakulam',
+    fullAddress: 'PFMG+PX5 Meeting Hall Konnakulam, konnakulam, Manamadurai, Soorakulam, Tamil Nadu 630606',
+    landmark: 'Near Shree Navaneedhar Krishna Kovil',
+    mapsUrl: 'https://maps.app.goo.gl/dhQqwdaezgx3uFWAA?g_st=aw',
+    qrImage: getAssetUrl('images/venue_qr.png'),
+  },
+  messages: {
+    blessingsHeading: 'WITH THE BLESSINGS OF OUR FAMILIES',
+    formalSubheading: 'WE CORDIALLY INVITE YOU TO JOIN US AS WE CELEBRATE THE WEDDING OF',
+    heroInvitation: 'Together with their loved ones, they invite you to celebrate the beginning of their forever.',
+    storyHeading: 'A BEAUTIFUL CHAPTER BEGINS',
+    storyBody: [
+      'Some moments arrive quietly, yet change our world forever.',
+      'From shared dreams to lifelong companionship, two souls find their sacred home in one another.',
+      'We joyfully invite you to witness the beginning of our forever.',
+    ],
+  },
+  gallery: [
+    {
+      id: 'royal_steps',
+      src: getAssetUrl('images/couple_royal_steps.jpg'),
+      webpSrc: getAssetUrl('images/couple_royal_steps.webp'),
+      fullSrc: getAssetUrl('images/full/couple_royal_steps.jpg'),
+      title: 'The Royal Union',
+      caption: 'Sri Krishna & Swetha in ceremonial splendor',
+      objectPosition: 'center 18%',
+    },
+    {
+      id: 'jasmine_moment',
+      src: getAssetUrl('images/couple_jasmine_moment.jpg'),
+      webpSrc: getAssetUrl('images/couple_jasmine_moment.webp'),
+      fullSrc: getAssetUrl('images/full/couple_jasmine_moment.jpg'),
+      title: 'Sacred Fragrance',
+      caption: 'Adorning fresh mallipoo amidst temple bells',
+      objectPosition: 'center 20%',
+    },
+    {
+      id: 'temple_sunset',
+      src: getAssetUrl('images/couple_temple_sunset.jpg'),
+      webpSrc: getAssetUrl('images/couple_temple_sunset.webp'),
+      fullSrc: getAssetUrl('images/full/couple_temple_sunset.jpg'),
+      title: 'Temple Serenade',
+      caption: 'Quiet sunset devotion at the ancient gopuram',
+      objectPosition: 'center 18%',
+    },
+    {
+      id: 'floral_window',
+      src: getAssetUrl('images/couple_floral_window.jpg'),
+      webpSrc: getAssetUrl('images/couple_floral_window.webp'),
+      fullSrc: getAssetUrl('images/full/couple_floral_window.jpg'),
+      title: 'Window of Dreams',
+      caption: 'Framed in cascading white blossoms & floating petals',
+      objectPosition: 'center 22%',
+    },
+    {
+      id: 'engaged_spotlight',
+      src: getAssetUrl('images/couple_engaged_spotlight.jpg'),
+      webpSrc: getAssetUrl('images/couple_engaged_spotlight.webp'),
+      fullSrc: getAssetUrl('images/full/couple_engaged_spotlight.jpg'),
+      title: 'Engaged for Eternity',
+      caption: 'Two souls united under the warm spotlight of destiny',
+      objectPosition: 'center 30%',
+    },
+    {
+      id: 'festive_candid',
+      src: getAssetUrl('images/couple_festive_candid.jpg'),
+      webpSrc: getAssetUrl('images/couple_festive_candid.webp'),
+      fullSrc: getAssetUrl('images/full/couple_festive_candid.jpg'),
+      title: 'Festive Joy',
+      caption: 'Warm smiles amidst vibrant celebrations',
+      objectPosition: 'center 20%',
+    },
+    {
+      id: 'studio_suit',
+      src: getAssetUrl('images/couple_studio_suit.jpg'),
+      webpSrc: getAssetUrl('images/couple_studio_suit.webp'),
+      fullSrc: getAssetUrl('images/full/couple_studio_suit.jpg'),
+      title: 'Modern Royalty',
+      caption: 'Poise and elegance in tailored splendor',
+      objectPosition: 'center 18%',
+    },
+    {
+      id: 'better_together',
+      src: getAssetUrl('images/couple_better_together.jpg'),
+      webpSrc: getAssetUrl('images/couple_better_together.webp'),
+      fullSrc: getAssetUrl('images/full/couple_better_together.jpg'),
+      title: 'Better Together',
+      caption: 'Laughter, companionship, and a love that grows forever',
+      objectPosition: 'center 22%',
+    },
+  ],
+  colors: {
+    background: '#FAF7F2',
+    cardBackground: '#E5E0D8',
+    cardFrontText: '#201C1C',
+    goldAccent: '#D4AF37',
+    hingeMetal: '#B39148',
+  },
+  intro: {
+    enabled: true,
+    skipButton: false,
+    maxWaitMs: 15000,
+  },
+  soundsEnabled: false,
+  quality: 'auto' as 'auto' | 'high' | 'medium' | 'low',
+};
